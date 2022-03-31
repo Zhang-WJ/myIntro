@@ -15,6 +15,7 @@ function App() {
                 githubButtonSize="large"
             />
           }
+          className={'main'}
           headerOptions={{
             "position": "fixed",
             "isRetracted": "smart",
@@ -27,11 +28,11 @@ function App() {
             illustration={
               <GlIllustration hasShadow={false}
                               type="code"
-                              text={`init : ( Model, Cmd Msg )
-update : Msg -> Model -> ( Model, Cmd Msg )                                                                                
-subscriptions : Model -> Sub Msg
+                              text={`init : ( Model, Cmd Msg )                     
+update : Msg -> Model -> ( Model, Cmd Msg )                              
+subscriptions : Model -> Sub Msg                                                                                     
 view : Model -> Html Msg`}
-                              language="javascript" />
+                              language="haskell" />
             }
             hasAnimation={true}
             buttonLabel={'Home Page'}
@@ -44,9 +45,9 @@ view : Model -> Html Msg`}
               <GlIllustration hasShadow={false}
                               type="code"
                               text={`import Prelude
-import Effect.Console (log)                                                                                                               
+import Effect.Console (log)                                                                                                  
 
-greet :: String -> String
+greet :: String -> String 
 greet name = "Hello, " <> name <> "!"
 
 main = log (greet "World")`}
@@ -88,6 +89,40 @@ let () = Html.window##.onload := Html.handler start`}
             hasAnimation={true}
             buttonLabel={'Home Page'}
             buttonLink={{href: "https://ocsigen.org/js_of_ocaml/latest/manual/overview"}}
+        />
+        <GlArticle
+            title="Elmish(Fable)"
+            body={`Elmish define a core abstractions allowing you to build Fable application following the model view update style of architecture.`}
+            illustration={
+              <GlIllustration hasShadow={false}
+                              type="code"
+                              text={`type Model =
+    { Value : string }
+type Msg =
+    | ChangeValue of string      
+let init () =
+    { Value = "" }, Cmd.none
+let update (msg:Msg) (model:Model) =
+    match msg with
+    | ChangeValue newValue ->
+        { model with Value = newValue }, Cmd.none                                                     
+let view model dispatch =
+    Html.div [
+        Html.input [
+            prop.value model.Value
+            prop.onChange (fun value ->
+                value |> ChangeValue |> dispatch
+            )
+        ]
+        Html.span [
+            prop.text $"Hello, %s{model.Value}!"
+        ]
+    ]`}
+                              language="ocaml" />
+            }
+            hasAnimation={true}
+            buttonLabel={'Home Page'}
+            buttonLink={{href: "https://fable.io/"}}
         />
       </GlTemplate>
   );
