@@ -1031,6 +1031,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.7.6":
+  version "7.18.3"
+  resolved "https://registry.npmmirror.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
+  integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.16.7", "@babel/template@^7.3.3":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.16.7.tgz#8d126c8701fde4d66b264b3eba3d96f07666d155"
@@ -4846,6 +4853,11 @@ github-buttons@^2.21.1:
   resolved "https://registry.npmmirror.com/github-buttons/-/github-buttons-2.21.1.tgz#9e55eb83b70c9149a21c235db2e971c53d4d98a2"
   integrity sha512-n9bCQ8sj+5oX1YH5NeyWGbAclRDtHEhMBzqw2ctsWpdEHOwVgfruRu0VIVy01Ah10dd/iFajMHYU71L7IBWBOw==
 
+github-pages-plugin-for-type-route@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmmirror.com/github-pages-plugin-for-type-route/-/github-pages-plugin-for-type-route-0.1.0.tgz#707779fd4b721d1f9757d8df51aca2618e66450c"
+  integrity sha512-2jJjUgZfQGapgSMMnJYXTdzOiaDnKZbvnnuOB/m+el/o0soyb/6KUVyac3PTBIz85Dj/ozynbNF83PFTk/lf+w==
+
 gitlanding@^0.9.3:
   version "0.9.3"
   resolved "https://registry.npmmirror.com/gitlanding/-/gitlanding-0.9.3.tgz#e5af26cc93c065ed2f0b75ec9c514b037333d2b5"
@@ -5026,6 +5038,13 @@ highlight.js@~9.15.0, highlight.js@~9.15.1:
   version "9.15.10"
   resolved "https://registry.npmmirror.com/highlight.js/-/highlight.js-9.15.10.tgz#7b18ed75c90348c045eef9ed08ca1319a2219ad2"
   integrity sha512-RoV7OkQm0T3os3Dd2VHLNMoaoDVx77Wygln3n9l5YV172XonWG6rgQD3XnF/BuFFZw9A0TJgmMSO8FEWQgvcXw==
+
+history@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.npmmirror.com/history/-/history-5.3.0.tgz#1548abaa245ba47992f063a0783db91ef201c73b"
+  integrity sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
 
 hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.1, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
@@ -9069,6 +9088,13 @@ type-is@~1.6.18:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.24"
+
+type-route@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.npmmirror.com/type-route/-/type-route-0.7.1.tgz#5ddd03fbc2b26c6dd85a0b15046688e0094e85d7"
+  integrity sha512-d7A68VZKpinrxwEw9O63BtjPR75DUu97fh8kDPMF02nBbsO0d+mYeaCFsr4VKA8lTsSInvYdCOIOzljqynp2Tg==
+  dependencies:
+    history "^5.3.0"
 
 type@^1.0.1:
   version "1.2.0"
